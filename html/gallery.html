@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="katzen-logo">KatzenNyangar</a>
+            <ul class="small-menu">
+              <li><a href="./leistungen.html">Services</a></li>
+              <li><a href="./gallery.html" style="color:rgb(234, 61, 96)">Gallery</a></li>
+              <li><a href="./kontakt.html">Contact</a></li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <main>
+
+        <section class="galery">
+            
+            <img id="showcase" src="../img/pic1.jpg" alt="main element picture"/>
+            
+            <ul>
+                <li>
+                    <img src="../img/pic1.jpg" alt="main picture"/>
+                </li>
+                <li>
+                    <img src="../img/pic2.jpg" alt="slide 1"/>
+                </li>
+                <li>
+                    <img src="../img/pic3.jpg" alt="slide 2"/>
+                </li>
+                <li>
+                    <img src="../img/pic4.jpg" alt="slide 3"/>
+                </li>
+                <li>
+                    <img src="../img/pic5.jpg" alt="slide 4"/>
+                </li>
+                <li>
+                    <img src="../img/render.jpg" alt="slide 5"/>
+                </li>
+                <li>
+                    <img src="../img/753.png" alt="slide 6"/>
+                </li>
+            </ul>
+
+
+                <button type="button" class="left" onclick="previousImage()">Links</button>
+                <button type="button" class="right" onclick="nextImage()">Rechts</button>
+       </section>
+        
+       <div class="flexgallery">
+            
+            <div>
+                <h1 class="galtext" id="gal_h_id">ฅ^•ﻌ•^ฅ<br/>Video-Trailer über unser Unternehmen</h1>
+                </div>
+            <div>
+                <iframe width="900" height="510" src="https://www.youtube.com/embed/om8LwZqe9Bk?si=KERHyBD7xk2KrpWd" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+       </div>
+
+    </main>
+
+    <footer>
+        <a href="https://www.tha.de/Service/Impressum.html">Impressum</a>
+        <a href="https://www.tha.de/Service/Datenschutz.html">Datenschutz</a>
+        <a href="https://www.instagram.com/marga_ritti?igsh=MTlkYmk0bm9hcTE2eQ==" id="insta">insta: @marga_ritti</a>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+
+</body>
+</html>

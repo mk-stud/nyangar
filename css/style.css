@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+    background-color: black;
+    color: white;
+}
+
+
+
+/**********************************************************header*********************************************************/
+header {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 130px;
+    height: fit-content;
+}
+
+header nav .mein-menu {
+    padding: 30px;
+    list-style: none;
+}
+
+header nav .mein-menu-index {
+    margin-top: 100px;
+    margin-left: 30px;
+    list-style: none;
+    width: 100px;
+}
+
+header nav .small-menu {
+    margin-left: 30px;
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: 500; /* Corrected to a valid font-weight value */
+    font-size: 40pt;
+    color: white;
+    float: left;
+}
+
+header nav .small-menu a {
+    font-size: 20pt;
+    font-weight: 500; /* Corrected to a valid font-weight value */
+    background-color: black;
+    /* width: 0; */ /* Width of 0 doesn't make sense; you may want to set it to a meaningful value or remove it */
+}
+
+
+header nav a:hover, header nav a:active {
+    color: rgb(234, 61, 96);
+}
+
+#firstimg {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+/* Styles for the mobile image */
+#firstimg-mobile {
+    display: none;
+}
+
+.katzen-logo {
+    font-weight: normal;
+    font-size: 50pt;
+    font-family: 'Gill Sans MT';
+    background-color: black;
+    width: 1920px;
+    height: 100px;
+    margin: 0 0 0 30px; /* Combined margin properties */
+    padding-top: 10px; /* Only kept the necessary padding property */
+    text-align: left;
+    z-index: 2;
+}
+
+
+/****************************************************************list**********************************************************/
+li::marker {
+    color: rgb(234, 61, 96);
+    
+}
+ol {
+    list-style-type: upper-roman;
+}  
+ul{
+    list-style-type: none;
+}
+
+ol > li::marker {
+    font-weight: bold;
+}
+
+
+
+
+
+
+/********************************************************text**********************************************************************/
+
+
+h1, h2 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contacttext {
+    padding-top: 150px;
+    margin-bottom: 90px;
+}
+
+.ctextdiv {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.ctextdiv p {
+    margin-top: 10px;
+}
+
+.bigtext {
+    margin: 0;
+}
+
+.leist_text {
+    text-align: right;
+    padding-top: 220px;
+    padding-right: 12%;
+    margin-left: 20%;
+}
+
+#ltext {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    padding-right: 12%;
+    padding-left: 20%;
+    margin-top: 20px;
+}
+
+.h1_leist {
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#em1 {
+    margin-bottom: 100px;
+    font-size: 35pt;
+}
+
+
+/****************************************************************table**************************************************************/
+
+/* Table Styling */
+table {
+    margin: 30px 0 40px 15%;
+    padding: 0;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    width: 75%;
+}
+
+/* Table Borders and Padding */
+th,
+td {
+    border: 2px solid black;
+    padding: 8px 10px;
+    background-color: rgb(234, 61, 96);
+}
+
+
+
+/*********************************************************************** gallery ********************************************************/
+.galery ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.galery li{
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: 0px;
+    width: 150px;
+}
+
+.galery li img, #showcase{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 10px;
+
+}
+
+.galery li::hover{
+    background-color: rgb(234, 61, 96);
+}
+
+.galery #showcase{
+    padding-top: 120px;
+}
+
+iframe {
+    margin: 0 50px 100px 0;
+    position: relative;
+    z-index: 1;
+    float: right;
+}
+
+.flexgallery {
+    display: flex;
+    justify-content: flex-start; /* 'left' is replaced with 'flex-start' for better readability */
+}
+
+.galtext {
+    margin: 0;
+    padding: 0 50px 0 60px;
+    float: left;
+    text-align: right;
+}
+
+#gal_h_id {
+    padding-top: 200px;
+    margin-bottom: 20px;
+}
+
+
+/************************************************************************button*******************************************************/
+
+button {
+    background-color: rgb(234, 61, 96);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    margin: 20px 0 50px 0;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+}
+
+.left {
+    position: relative;
+    left: 40%;
+}
+
+.right {
+    position: relative;
+    left: 45%;
+}
+
+
+
+
+
+
+
+/*********************************************************************footer******************************************************/
+
+#footerHome, footer {
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footerHome a, footer a {
+    margin-left: 35px;
+    text-decoration: none;
+    font-weight: 500; /* 'Medium' changed to numeric value for better compatibility */
+    color: white;
+}
+
+#footerHome a:hover, #footerHome a.active, footer a:hover, footer a.active {
+    color: rgb(234, 61, 96);
+}
+
+#insta {
+    margin-right: 35px;
+    float: right;
+}
+
+
+/**************************************************************media****************************************************************/
+/* CSS für Tablet */
+
+@media (max-width:992px) {
+
+}
+  
+/* CSS für Smartphone */
+
+@media only screen and (max-width: 768px) {
+    .index-page nav.mein-menu-index {
+        display: grid;
+        height: 200px;
+        list-style: none;
+        position: fixed;
+    }
+
+    .mein-menu-index {
+        display: inline-block;
+        text-align: center;
+        grid-area: menu;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    /* Hide desktop img */
+    #firstimg {
+        display: none;
+    }
+  
+    /* Show mobile img */
+    #firstimg-mobile {
+        display: block;
+        width: 100%;
+        grid-area: image;
+        padding-top: 300px;
+    }
+
+
+
+    .galtext {
+        float: none; /* Remove float */
+        text-align: center; /* Center align the text */
+        position: absolute; /* Position the text */
+        left: 0; /* Align the text to the left edge */
+        width: 100%; /* Take full width */
+        transform: translateY(-50%); /* Center vertically */
+        padding: 0 20px; /* Adjust padding as needed */
+    }
+
+    iframe {
+        float: none; /* Убрать плавающее положение */
+        margin: 0px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        display: block; /* Сделать блочным элементом */
+        width: 90%; /* Установить ширину iframe */
+    }
+    
+
+    .katzen-logo {
+        font-size: 30pt;
+    }
+
+    #footerHome, footer {
+        background-color: black;
+        padding: 10px;
+        margin: 0;
+        height: auto;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        font-size: 9pt;
+    }
+
+    .ctextdiv {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flexgallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .ctextdiv p {
+        margin-top: 10px;
+    }
+
+    .left {
+        position: relative;
+        left: auto;
+    }
+    
+    .right {
+        position: relative;
+        right: auto;
+    }
+    
+    #gal_h_id {
+        padding-top: 0px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .galtext {
+        float: none;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        padding: 0 20px;
+    }
+
+    main{
+        padding-top: 90px;
+    }
+}
+
+
