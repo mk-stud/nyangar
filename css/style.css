@@ -37,7 +37,7 @@ header nav .small-menu {
 
 header nav a {
     text-decoration: none;
-    font-weight: 500; /* Corrected to a valid font-weight value */
+    font-weight: 500;
     font-size: 40pt;
     color: white;
     float: left;
@@ -45,9 +45,9 @@ header nav a {
 
 header nav .small-menu a {
     font-size: 20pt;
-    font-weight: 500; /* Corrected to a valid font-weight value */
+    font-weight: 500;
     background-color: black;
-    /* width: 0; */ /* Width of 0 doesn't make sense; you may want to set it to a meaningful value or remove it */
+
 }
 
 
@@ -72,8 +72,8 @@ header nav a:hover, header nav a:active {
     background-color: black;
     width: 1920px;
     height: 100px;
-    margin: 0 0 0 30px; /* Combined margin properties */
-    padding-top: 10px; /* Only kept the necessary padding property */
+    margin: 0 0 0 30px;
+    padding-top: 10px;
     text-align: left;
     z-index: 2;
 }
@@ -221,7 +221,7 @@ iframe {
 
 .flexgallery {
     display: flex;
-    justify-content: flex-start; /* 'left' is replaced with 'flex-start' for better readability */
+    justify-content: flex-start;
 }
 
 .galtext {
@@ -289,7 +289,7 @@ button:hover {
 #footerHome a, footer a {
     margin-left: 35px;
     text-decoration: none;
-    font-weight: 500; /* 'Medium' changed to numeric value for better compatibility */
+    font-weight: 500;
     color: white;
 }
 
@@ -344,23 +344,23 @@ button:hover {
 
 
     .galtext {
-        float: none; /* Remove float */
-        text-align: center; /* Center align the text */
-        position: absolute; /* Position the text */
-        left: 0; /* Align the text to the left edge */
-        width: 100%; /* Take full width */
-        transform: translateY(-50%); /* Center vertically */
-        padding: 0 20px; /* Adjust padding as needed */
+        float: none;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        padding: 0 20px;
     }
 
     iframe {
-        float: none; /* Убрать плавающее положение */
+        float: none;
         margin: 0px;
         margin-top: 50px;
         margin-left: 50px;
         margin-bottom: 50px;
-        display: block; /* Сделать блочным элементом */
-        width: 90%; /* Установить ширину iframe */
+        display: block;
+        width: 90%;
     }
     
 
